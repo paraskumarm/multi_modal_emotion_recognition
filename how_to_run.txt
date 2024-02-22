@@ -1,0 +1,5 @@
+conda create -n multi_modal python=3.9.12 anaconda
+conda activate multi_modal
+pip3 install keras==2.9
+pip3 install tensorflow==2.9
+python3.9 flask_app.py
