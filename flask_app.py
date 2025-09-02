@@ -4,27 +4,14 @@ from flask import Flask, render_template, request, Response
 import os
 import numpy as np
 from matplotlib.image import imread
-
+from video_stream import generate_frames
+from models import predict_emotion
 
 app = Flask(__name__)
 
 # Paths
 BASEPATH = os.getcwd()
 UPLOAD_PATH = os.path.join(BASEPATH, "static/uploads/")
-
-
-# Import model prediction logic
-from models import predict_emotion
-
-
-
-
-
-
-# Import video streaming logic
-from video_stream import generate_frames
-
-
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
