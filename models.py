@@ -1,8 +1,8 @@
-
 """Model loading and emotion prediction utilities."""
 
 import numpy as np
 import skimage
+# pylint: disable=import-error
 from tensorflow.keras.models import load_model
 
 # Load models (compile=False for compatibility)
