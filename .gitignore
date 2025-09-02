@@ -1,0 +1,15 @@
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Virtual environments
+*tf2env*
+
+# Local files
+static/uploads
+models/*
+
+# python files
+__pycache__/*
