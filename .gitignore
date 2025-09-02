@@ -1,3 +1,8 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Python cache
+.ipynb_checkpoints/
 # VS Code
 .vscode/
 
